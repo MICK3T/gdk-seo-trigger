@@ -1,0 +1,13 @@
+{
+  "name": "gdk-seo-trigger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cron Railway qui déclenche les workflows GitHub de la machine SEO (gdk-seo-copilot).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node trigger.js"
+  }
+}
