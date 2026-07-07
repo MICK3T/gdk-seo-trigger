@@ -53,6 +53,8 @@ async function main() {
   if (dow === 0) await dispatch("optimize.yml");
   // research : le 1er du mois (nouveaux mots-clés)
   if (dom === 1) await dispatch("research.yml");
+  // digest : récap hebdo le lundi + bilan mensuel le 1er (le script choisit la période)
+  if (dow === 1 || dom === 1) await dispatch("digest.yml");
 
   console.log("Terminé.");
   process.exit(0);
