@@ -55,6 +55,8 @@ async function main() {
   if (dom === 1) await dispatch("research.yml");
   // digest : récap hebdo le lundi + bilan mensuel le 1er (le script choisit la période)
   if (dow === 1 || dom === 1) await dispatch("digest.yml");
+  // rapport PDF (mots-clés + infos de génération) : lundi + 1er du mois
+  if (dow === 1 || dom === 1) await dispatch("report-pdf.yml");
 
   console.log("Terminé.");
   process.exit(0);
